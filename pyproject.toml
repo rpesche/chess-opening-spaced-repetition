@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "anki-chess-openings"
+version = "0.1.0"
+description = "Create anki decks to learn chess openings"
+authors = ["Romain Pesche <romain@pesche.fr>"]
+readme = "README.md"
+packages = [{include = "anki_chess_openings"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+berserk = "^0.12.10"
+selenium = "^4.12.0"
+chess = "^1.10.0"
+genanki = "^0.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
