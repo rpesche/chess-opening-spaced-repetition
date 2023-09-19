@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "anki-chess-openings"
+name = "chess-opening-spaced-repetition"
 version = "0.1.0"
-description = "Create anki decks to learn chess openings"
+description = "Create spaced repetition deck to learn chess openings"
 authors = ["Romain Pesche <romain@pesche.fr>"]
 readme = "README.md"
-packages = [{include = "anki_chess_openings"}]
+packages = [{include = "chess-opening-spaced-repetition"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
