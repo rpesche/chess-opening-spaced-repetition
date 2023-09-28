@@ -10,6 +10,7 @@ Options:
   <position>    The start position
 """
 from dataclasses import dataclass
+import hashlib
 
 import chess
 import chess.svg
@@ -25,6 +26,9 @@ class CardInfo:
     opponnent_san: str
     moves: list[str]
 
+    def hash(self):
+        payload = self.fen + self.opponnent_san
+        return hashlib.md5(payload.encode("utf-8")).hexdigest()
 
 def key_from_oponent_move(board, opponnent_san, moves):
     fen = board.fen()

@@ -1,7 +1,6 @@
 from tempfile import TemporaryDirectory
 from typing import TYPE_CHECKING
 from pathlib import Path
-import hashlib
 
 import chess.svg
 import chess
@@ -57,7 +56,7 @@ def create_anki_packages(cards: list["CardInfo"]):
     file_directory = TemporaryDirectory()
     package_files = []
     for card in cards:
-        card_name = hashlib.md5(card.fen.encode("utf-8")).hexdigest()
+        card_name = card.hash()
 
         recto_svg = create_svg_board(card.fen, opponnent_san=card.opponnent_san)
         recto_file_name = f"{card_name}_recto.svg"
