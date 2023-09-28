@@ -1,0 +1,439 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fpppp1ppp%2F4p3%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR+w+KQkq+-+0+1
+  response:
+    body:
+      string: '{"white":136839125,"draws":11221703,"black":136739109,"moves":[{"uci":"d2d4","san":"d4","averageRating":1757,"white":58395882,"draws":4998046,"black":55858982,"game":null},{"uci":"g1f3","san":"Nf3","averageRating":1600,"white":40159357,"draws":3255478,"black":41064495,"game":null},{"uci":"b1c3","san":"Nc3","averageRating":1691,"white":9734733,"draws":758534,"black":9549774,"game":null},{"uci":"f1c4","san":"Bc4","averageRating":1516,"white":5944675,"draws":457454,"black":6990065,"game":null},{"uci":"f2f4","san":"f4","averageRating":1692,"white":5739532,"draws":382952,"black":5864664,"game":null},{"uci":"d2d3","san":"d3","averageRating":1713,"white":5075975,"draws":425543,"black":4962835,"game":null},{"uci":"e4e5","san":"e5","averageRating":1527,"white":3591667,"draws":278797,"black":3800554,"game":null},{"uci":"c2c4","san":"c4","averageRating":1793,"white":2243345,"draws":175999,"black":2006989,"game":null},{"uci":"d1f3","san":"Qf3","averageRating":1398,"white":1398324,"draws":106834,"black":1671166,"game":null},{"uci":"b2b3","san":"b3","averageRating":1801,"white":809145,"draws":63503,"black":756130,"game":null},{"uci":"d1e2","san":"Qe2","averageRating":1965,"white":694895,"draws":59663,"black":563676,"game":null},{"uci":"c2c3","san":"c3","averageRating":1627,"white":576224,"draws":44793,"black":631857,"game":null}],"recentGames":[{"uci":"c2c3","id":"67QMsIk4","winner":"white","speed":"bullet","mode":"rated","black":{"name":"Gabriel1404","rating":1723},"white":{"name":"Billy_Talent","rating":1736},"year":2023,"month":"2023-08"},{"uci":"g1f3","id":"HZId8J8c","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Sandyccs","rating":1749},"white":{"name":"Shingshang","rating":1763},"year":2023,"month":"2023-08"},{"uci":"g1f3","id":"LtzSTGD7","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ali13455431","rating":1443},"white":{"name":"Mohammad_raouf","rating":1425},"year":2023,"month":"2023-08"},{"uci":"g1f3","id":"EXldYYoG","winner":"white","speed":"blitz","mode":"rated","black":{"name":"matheusmm98","rating":1863},"white":{"name":"shuravi21","rating":1856},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"d2d4","id":"HdvJxMbR","winner":null,"speed":"blitz","mode":"rated","black":{"name":"Kaggle","rating":2743},"white":{"name":"Azumilover","rating":2877},"year":2023,"month":"2023-08"},{"uci":"g1f3","id":"Z0PaOtTZ","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Kaggle","rating":2718},"white":{"name":"Azumilover","rating":2893},"year":2023,"month":"2023-08"},{"uci":"d2d4","id":"gyqPalvh","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ViejoTortuga","rating":2932},"white":{"name":"dimochka_tsoi","rating":3066},"year":2023,"month":"2023-08"},{"uci":"g1f3","id":"ZZ8j5OeY","winner":"black","speed":"bullet","mode":"rated","black":{"name":"TrappedPiece","rating":2796},"white":{"name":"Chesssplayer21","rating":3037},"year":2023,"month":"2023-08"}],"opening":{"eco":"C00","name":"French
+        Defense"}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fpppp1ppp%2F4p3%2F8%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR+b+KQkq+-+0+1
+  response:
+    body:
+      string: '{"white":65511290,"draws":5541575,"black":62733151,"moves":[{"uci":"d7d5","san":"d5","averageRating":1791,"white":43046043,"draws":4020086,"black":42958405,"game":null},{"uci":"c7c5","san":"c5","averageRating":1673,"white":4508822,"draws":307178,"black":4283844,"game":null},{"uci":"d7d6","san":"d6","averageRating":1597,"white":3281111,"draws":228511,"black":2777071,"game":null},{"uci":"b7b6","san":"b6","averageRating":1706,"white":3064926,"draws":211769,"black":2850311,"game":null},{"uci":"c7c6","san":"c6","averageRating":1632,"white":2698093,"draws":189607,"black":2359333,"game":null},{"uci":"g8f6","san":"Nf6","averageRating":1526,"white":1453430,"draws":95884,"black":1225968,"game":null},{"uci":"f8e7","san":"Be7","averageRating":1744,"white":1018399,"draws":67804,"black":972287,"game":null},{"uci":"g8e7","san":"Ne7","averageRating":1743,"white":1006891,"draws":67069,"black":948072,"game":null},{"uci":"d8h4","san":"Qh4","averageRating":1321,"white":902730,"draws":64202,"black":818729,"game":null},{"uci":"b8c6","san":"Nc6","averageRating":1405,"white":901199,"draws":58171,"black":697584,"game":null},{"uci":"g7g6","san":"g6","averageRating":1583,"white":753529,"draws":51514,"black":648066,"game":null},{"uci":"a7a6","san":"a6","averageRating":1597,"white":538871,"draws":35626,"black":477532,"game":null}],"recentGames":[{"uci":"d7d5","id":"ihYolrl0","winner":"white","speed":"bullet","mode":"rated","black":{"name":"Maletaja1","rating":2581},"white":{"name":"Hommadow_Atahan","rating":2732},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"e6R4AxRJ","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Maximo_Dorado","rating":1919},"white":{"name":"Grandiosemaster007","rating":1915},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"6vBqwkR2","winner":"white","speed":"blitz","mode":"rated","black":{"name":"GuilhermeFenix2010","rating":1311},"white":{"name":"daviquinelatocosta","rating":1100},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"LnhI0akE","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ajnetto","rating":2122},"white":{"name":"lautremule","rating":2116},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"d7d5","id":"y1gB702j","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Azumilover","rating":2877},"white":{"name":"CarlesMurusevich","rating":2762},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"HdvJxMbR","winner":null,"speed":"blitz","mode":"rated","black":{"name":"Kaggle","rating":2743},"white":{"name":"Azumilover","rating":2877},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"gyqPalvh","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ViejoTortuga","rating":2932},"white":{"name":"dimochka_tsoi","rating":3066},"year":2023,"month":"2023-08"},{"uci":"d8h4","id":"BbUI3ZPX","winner":null,"speed":"bullet","mode":"rated","black":{"name":"NaThYgOnZaLeZ","rating":3017},"white":{"name":"aerodaktil","rating":2897},"year":2023,"month":"2023-08"}],"opening":{"eco":"C00","name":"French
+        Defense: Normal Variation"}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3p4%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR+w+KQkq+-+0+2
+  response:
+    body:
+      string: '{"white":43983409,"draws":4079345,"black":43779275,"moves":[{"uci":"e4e5","san":"e5","averageRating":1690,"white":14604725,"draws":1192991,"black":15819559,"game":null},{"uci":"e4d5","san":"exd5","averageRating":1763,"white":13102779,"draws":1377775,"black":13088925,"game":null},{"uci":"b1c3","san":"Nc3","averageRating":1883,"white":9763448,"draws":886664,"black":8851379,"game":null},{"uci":"b1d2","san":"Nd2","averageRating":1994,"white":4508583,"draws":452868,"black":3906782,"game":null},{"uci":"f1d3","san":"Bd3","averageRating":1888,"white":838007,"draws":79961,"black":771022,"game":null},{"uci":"g1f3","san":"Nf3","averageRating":1537,"white":253130,"draws":18923,"black":305389,"game":null},{"uci":"c2c4","san":"c4","averageRating":1803,"white":275398,"draws":19489,"black":265692,"game":null},{"uci":"f2f3","san":"f3","averageRating":1489,"white":231031,"draws":18997,"black":284611,"game":null},{"uci":"c2c3","san":"c3","averageRating":1625,"white":107234,"draws":7923,"black":125639,"game":null},{"uci":"c1e3","san":"Be3","averageRating":1832,"white":120744,"draws":8079,"black":104376,"game":null},{"uci":"f1b5","san":"Bb5+","averageRating":1283,"white":30731,"draws":3380,"black":49707,"game":null},{"uci":"f2f4","san":"f4","averageRating":1540,"white":30729,"draws":2484,"black":47108,"game":null}],"recentGames":[{"uci":"e4e5","id":"ihYolrl0","winner":"white","speed":"bullet","mode":"rated","black":{"name":"Maletaja1","rating":2581},"white":{"name":"Hommadow_Atahan","rating":2732},"year":2023,"month":"2023-08"},{"uci":"e4e5","id":"e6R4AxRJ","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Maximo_Dorado","rating":1919},"white":{"name":"Grandiosemaster007","rating":1915},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"6vBqwkR2","winner":"white","speed":"blitz","mode":"rated","black":{"name":"GuilhermeFenix2010","rating":1311},"white":{"name":"daviquinelatocosta","rating":1100},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"LnhI0akE","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ajnetto","rating":2122},"white":{"name":"lautremule","rating":2116},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"b1c3","id":"y1gB702j","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Azumilover","rating":2877},"white":{"name":"CarlesMurusevich","rating":2762},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"gyqPalvh","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ViejoTortuga","rating":2932},"white":{"name":"dimochka_tsoi","rating":3066},"year":2023,"month":"2023-08"},{"uci":"b1c3","id":"2h3NEcuM","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2885},"white":{"name":"Tivectic","rating":2943},"year":2023,"month":"2023-08"},{"uci":"f1d3","id":"8g1UVLOV","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Tivectic","rating":2931},"white":{"name":"BlackBoarder","rating":2844},"year":2023,"month":"2023-08"}],"opening":{"eco":"C00","name":"French
+        Defense"}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3pP3%2F3P4%2F8%2FPPP2PPP%2FRNBQKBNR+b+KQkq+-+0+2
+  response:
+    body:
+      string: '{"white":17558758,"draws":1400072,"black":18694818,"moves":[{"uci":"c7c5","san":"c5","averageRating":1724,"white":12988200,"draws":1098227,"black":14800297,"game":null},{"uci":"b8c6","san":"Nc6","averageRating":1368,"white":1672145,"draws":107497,"black":1362120,"game":null},{"uci":"f7f6","san":"f6","averageRating":1437,"white":747211,"draws":48086,"black":644581,"game":null},{"uci":"g8e7","san":"Ne7","averageRating":1624,"white":422582,"draws":30163,"black":420012,"game":null},{"uci":"f8b4","san":"Bb4+","averageRating":1324,"white":292530,"draws":17776,"black":201572,"game":null},{"uci":"c7c6","san":"c6","averageRating":1480,"white":263032,"draws":16281,"black":212248,"game":null},{"uci":"a7a6","san":"a6","averageRating":1570,"white":233758,"draws":17654,"black":237291,"game":null},{"uci":"f7f5","san":"f5","averageRating":1638,"white":137576,"draws":9455,"black":121145,"game":null},{"uci":"c8d7","san":"Bd7","averageRating":1612,"white":126292,"draws":9332,"black":128094,"game":null},{"uci":"b7b6","san":"b6","averageRating":1605,"white":125634,"draws":10444,"black":114567,"game":null},{"uci":"f8e7","san":"Be7","averageRating":1530,"white":120349,"draws":7373,"black":103857,"game":null},{"uci":"g7g6","san":"g6","averageRating":1524,"white":107528,"draws":7718,"black":91168,"game":null}],"recentGames":[{"uci":"c7c5","id":"ihYolrl0","winner":"white","speed":"bullet","mode":"rated","black":{"name":"Maletaja1","rating":2581},"white":{"name":"Hommadow_Atahan","rating":2732},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"e6R4AxRJ","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Maximo_Dorado","rating":1919},"white":{"name":"Grandiosemaster007","rating":1915},"year":2023,"month":"2023-08"},{"uci":"g8f6","id":"8y6jVRyv","winner":"white","speed":"blitz","mode":"rated","black":{"name":"Jofigueiredo","rating":1041},"white":{"name":"Chafutsa","rating":1051},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"13sMCUTA","winner":"white","speed":"bullet","mode":"rated","black":{"name":"kyraine","rating":2297},"white":{"name":"Kurgan0303","rating":2144},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"c7c5","id":"JH8lGTRO","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2864},"white":{"name":"Eyesless18","rating":3028},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"tkqKDQ6b","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2855},"white":{"name":"aerodaktil","rating":2882},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"xeD4E80P","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Iplay4Drawski","rating":2850},"white":{"name":"Greenlantern07","rating":2811},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"Z3C60i4y","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Brave_spirit12","rating":2997},"white":{"name":"Iplay4Drawski","rating":2828},"year":2023,"month":"2023-08"}],"opening":{"eco":"C02","name":"French
+        Defense: Advance Variation"}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3P4%2F3P4%2F8%2FPPP2PPP%2FRNBQKBNR+b+KQkq+-+0+2
+  response:
+    body:
+      string: '{"white":13205715,"draws":1384189,"black":13183856,"moves":[{"uci":"e6d5","san":"exd5","averageRating":1787,"white":11971606,"draws":1292506,"black":12203815,"game":null},{"uci":"d8d5","san":"Qxd5","averageRating":1578,"white":982568,"draws":74709,"black":773796,"game":null},{"uci":"g8f6","san":"Nf6","averageRating":1734,"white":85453,"draws":5750,"black":75139,"game":null},{"uci":"c7c5","san":"c5","averageRating":1596,"white":75754,"draws":5994,"black":67527,"game":null},{"uci":"e6e5","san":"e5","averageRating":1743,"white":24632,"draws":1371,"black":13434,"game":null},{"uci":"c7c6","san":"c6","averageRating":1628,"white":16652,"draws":1084,"black":13190,"game":null},{"uci":"f8d6","san":"Bd6","averageRating":1698,"white":8249,"draws":456,"black":6862,"game":null},{"uci":"f8b4","san":"Bb4+","averageRating":1393,"white":5914,"draws":387,"black":4619,"game":null},{"uci":"b8c6","san":"Nc6","averageRating":1381,"white":5372,"draws":266,"black":3063,"game":null},{"uci":"d8e7","san":"Qe7","averageRating":1558,"white":3666,"draws":210,"black":2881,"game":null},{"uci":"f8e7","san":"Be7","averageRating":1703,"white":3200,"draws":211,"black":3107,"game":null},{"uci":"g8e7","san":"Ne7","averageRating":1622,"white":3355,"draws":206,"black":2890,"game":null}],"recentGames":[{"uci":"e6d5","id":"6vBqwkR2","winner":"white","speed":"blitz","mode":"rated","black":{"name":"GuilhermeFenix2010","rating":1311},"white":{"name":"daviquinelatocosta","rating":1100},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"LnhI0akE","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ajnetto","rating":2122},"white":{"name":"lautremule","rating":2116},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"tP8BkLXE","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Hugo010","rating":2099},"white":{"name":"Yorgun-Democrat","rating":2126},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"NtDIJ0zg","winner":"black","speed":"bullet","mode":"rated","black":{"name":"coryr305","rating":2453},"white":{"name":"e-player","rating":2446},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"e6d5","id":"gyqPalvh","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ViejoTortuga","rating":2932},"white":{"name":"dimochka_tsoi","rating":3066},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"15Rndgm9","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2889},"white":{"name":"ApWbD14","rating":2831},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"tPcEyyUu","winner":"white","speed":"bullet","mode":"rated","black":{"name":"TrappedPiece","rating":2810},"white":{"name":"ApWbD14","rating":2826},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"WMJWtZHQ","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Brave_spirit12","rating":2966},"white":{"name":"DY0727","rating":2739},"year":2023,"month":"2023-08"}],"opening":{"eco":"C01","name":"French
+        Defense: Exchange Variation"}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3p4%2F3PP3%2F2N5%2FPPP2PPP%2FR1BQKBNR+b+KQkq+-+1+2
+  response:
+    body:
+      string: '{"white":12088090,"draws":1068624,"black":10898339,"moves":[{"uci":"g8f6","san":"Nf6","averageRating":1926,"white":3686916,"draws":334044,"black":3496096,"game":null},{"uci":"d5e4","san":"dxe4","averageRating":1840,"white":3138408,"draws":293751,"black":2717222,"game":null},{"uci":"f8b4","san":"Bb4","averageRating":1930,"white":2640268,"draws":251306,"black":2487401,"game":null},{"uci":"c7c5","san":"c5","averageRating":1626,"white":1399331,"draws":98955,"black":1154807,"game":null},{"uci":"c7c6","san":"c6","averageRating":1719,"white":482538,"draws":32966,"black":398256,"game":null},{"uci":"b8c6","san":"Nc6","averageRating":1578,"white":253608,"draws":21015,"black":227439,"game":null},{"uci":"f7f5","san":"f5","averageRating":1958,"white":96277,"draws":8234,"black":96317,"game":null},{"uci":"a7a6","san":"a6","averageRating":1699,"white":74526,"draws":5367,"black":65837,"game":null},{"uci":"g8e7","san":"Ne7","averageRating":1649,"white":76313,"draws":5153,"black":63594,"game":null},{"uci":"f8e7","san":"Be7","averageRating":1908,"white":53828,"draws":4815,"black":50762,"game":null},{"uci":"h7h6","san":"h6","averageRating":1887,"white":34643,"draws":3330,"black":33186,"game":null},{"uci":"b7b6","san":"b6","averageRating":1640,"white":26531,"draws":1820,"black":20653,"game":null}],"recentGames":[{"uci":"f8b4","id":"KMZjnxZi","winner":"white","speed":"blitz","mode":"rated","black":{"name":"Minard359","rating":1665},"white":{"name":"hjortur","rating":1720},"year":2023,"month":"2023-08"},{"uci":"d5e4","id":"8tJosDpA","winner":"white","speed":"bullet","mode":"rated","black":{"name":"Jeraldvillarin","rating":2294},"white":{"name":"Sac1","rating":2332},"year":2023,"month":"2023-08"},{"uci":"d5e4","id":"B3PadDPm","winner":"white","speed":"blitz","mode":"rated","black":{"name":"junaidkhan1231","rating":1491},"white":{"name":"Iloveprog","rating":1603},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"COe2wowJ","winner":null,"speed":"rapid","mode":"rated","black":{"name":"leonidas2340p","rating":1139},"white":{"name":"GilvanMarroch","rating":1075},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"g8f6","id":"y1gB702j","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Azumilover","rating":2877},"white":{"name":"CarlesMurusevich","rating":2762},"year":2023,"month":"2023-08"},{"uci":"d5e4","id":"esWCHT92","winner":"black","speed":"bullet","mode":"rated","black":{"name":"dimochka_tsoi","rating":3053},"white":{"name":"Chesssplayer21","rating":3023},"year":2023,"month":"2023-08"},{"uci":"g8f6","id":"Y48SRsbB","winner":"white","speed":"bullet","mode":"rated","black":{"name":"Jacek_Muranski","rating":2861},"white":{"name":"markus4","rating":2820},"year":2023,"month":"2023-08"},{"uci":"f8b4","id":"2h3NEcuM","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2885},"white":{"name":"Tivectic","rating":2943},"year":2023,"month":"2023-08"}],"opening":{"eco":"C10","name":"French
+        Defense: Paulsen Variation"}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fpppp1ppp%2F4p3%2F8%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQKB1R+b+KQkq+-+1+1
+  response:
+    body:
+      string: '{"white":41027570,"draws":3319395,"black":41960952,"moves":[{"uci":"d7d5","san":"d5","averageRating":1660,"white":23378959,"draws":2101668,"black":25291795,"game":null},{"uci":"c7c5","san":"c5","averageRating":1643,"white":3211645,"draws":228046,"black":3308960,"game":null},{"uci":"d7d6","san":"d6","averageRating":1524,"white":2368476,"draws":164736,"black":2210730,"game":null},{"uci":"b7b6","san":"b6","averageRating":1607,"white":2213086,"draws":157000,"black":2177999,"game":null},{"uci":"c7c6","san":"c6","averageRating":1571,"white":2045118,"draws":148452,"black":1979379,"game":null},{"uci":"g8f6","san":"Nf6","averageRating":1416,"white":1303941,"draws":91289,"black":1144814,"game":null},{"uci":"b8c6","san":"Nc6","averageRating":1406,"white":1183811,"draws":82337,"black":1007104,"game":null},{"uci":"f8e7","san":"Be7","averageRating":1667,"white":819185,"draws":57849,"black":887148,"game":null},{"uci":"g8e7","san":"Ne7","averageRating":1657,"white":717675,"draws":50330,"black":757348,"game":null},{"uci":"f8c5","san":"Bc5","averageRating":1372,"white":724655,"draws":40933,"black":582566,"game":null},{"uci":"g7g6","san":"g6","averageRating":1503,"white":626190,"draws":43763,"black":584313,"game":null},{"uci":"a7a6","san":"a6","averageRating":1524,"white":417840,"draws":28516,"black":400824,"game":null}],"recentGames":[{"uci":"d7d6","id":"HZId8J8c","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Sandyccs","rating":1749},"white":{"name":"Shingshang","rating":1763},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"LtzSTGD7","winner":"white","speed":"bullet","mode":"rated","black":{"name":"ali13455431","rating":1443},"white":{"name":"Mohammad_raouf","rating":1425},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"EXldYYoG","winner":"white","speed":"blitz","mode":"rated","black":{"name":"matheusmm98","rating":1863},"white":{"name":"shuravi21","rating":1856},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"sVro9e4O","winner":"white","speed":"blitz","mode":"rated","black":{"name":"bekolamanyak","rating":1110},"white":{"name":"miguel4101","rating":1058},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"c7c5","id":"Z0PaOtTZ","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Kaggle","rating":2718},"white":{"name":"Azumilover","rating":2893},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"ZZ8j5OeY","winner":"black","speed":"bullet","mode":"rated","black":{"name":"TrappedPiece","rating":2796},"white":{"name":"Chesssplayer21","rating":3037},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"YcXrVnfo","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2850},"white":{"name":"Zakaryan_David","rating":2876},"year":2023,"month":"2023-08"},{"uci":"d7d5","id":"ZxN5ywYI","winner":"black","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2849},"white":{"name":"Zakaryan_David","rating":2877},"year":2023,"month":"2023-08"}],"opening":{"eco":"C00","name":"French
+        Defense: Knight Variation"}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3p4%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQKB1R+w+KQkq+-+0+2
+  response:
+    body:
+      string: '{"white":23712721,"draws":2121301,"black":25583810,"moves":[{"uci":"e4d5","san":"exd5","averageRating":1673,"white":14997785,"draws":1439385,"black":15897189,"game":null},{"uci":"e4e5","san":"e5","averageRating":1610,"white":4644227,"draws":350231,"black":5101503,"game":null},{"uci":"b1c3","san":"Nc3","averageRating":1677,"white":2031488,"draws":166020,"black":2055177,"game":null},{"uci":"d2d4","san":"d4","averageRating":1543,"white":754537,"draws":53116,"black":852147,"game":null},{"uci":"d2d3","san":"d3","averageRating":1439,"white":548275,"draws":57664,"black":686054,"game":null},{"uci":"f1b5","san":"Bb5+","averageRating":1330,"white":186412,"draws":14878,"black":247540,"game":null},{"uci":"f1d3","san":"Bd3","averageRating":1366,"white":124681,"draws":10029,"black":166606,"game":null},{"uci":"f1c4","san":"Bc4","averageRating":1389,"white":87284,"draws":6557,"black":140387,"game":null},{"uci":"f3e5","san":"Ne5","averageRating":1354,"white":90824,"draws":5411,"black":110359,"game":null},{"uci":"c2c3","san":"c3","averageRating":1466,"white":67902,"draws":4884,"black":85924,"game":null},{"uci":"f3g5","san":"Ng5","averageRating":1489,"white":39783,"draws":2395,"black":51583,"game":null},{"uci":"d1e2","san":"Qe2","averageRating":1410,"white":38258,"draws":3112,"black":47108,"game":null}],"recentGames":[{"uci":"e4d5","id":"EXldYYoG","winner":"white","speed":"blitz","mode":"rated","black":{"name":"matheusmm98","rating":1863},"white":{"name":"shuravi21","rating":1856},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"bVRu6KyQ","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Jeff555","rating":1514},"white":{"name":"ostingodman","rating":1233},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"ZJCexuGh","winner":"white","speed":"blitz","mode":"rated","black":{"name":"Amelia_LauP","rating":1834},"white":{"name":"hrn201","rating":1946},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"FI66fcnE","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Aalvines","rating":1456},"white":{"name":"Chicogomes","rating":1448},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"b1c3","id":"ZZ8j5OeY","winner":"black","speed":"bullet","mode":"rated","black":{"name":"TrappedPiece","rating":2796},"white":{"name":"Chesssplayer21","rating":3037},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"YcXrVnfo","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2850},"white":{"name":"Zakaryan_David","rating":2876},"year":2023,"month":"2023-08"},{"uci":"e4d5","id":"ZxN5ywYI","winner":"black","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2849},"white":{"name":"Zakaryan_David","rating":2877},"year":2023,"month":"2023-08"},{"uci":"b1c3","id":"TY0CmyOF","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2842},"white":{"name":"shahinlorpari","rating":2814},"year":2023,"month":"2023-08"}],"opening":null}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:35 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:35 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3P4%2F8%2F5N2%2FPPPP1PPP%2FRNBQKB1R+b+KQkq+-+0+2
+  response:
+    body:
+      string: '{"white":15119322,"draws":1446814,"black":16009265,"moves":[{"uci":"e6d5","san":"exd5","averageRating":1703,"white":13751723,"draws":1352935,"black":14909931,"game":null},{"uci":"d8d5","san":"Qxd5","averageRating":1494,"white":1037164,"draws":73949,"black":820902,"game":null},{"uci":"g8f6","san":"Nf6","averageRating":1650,"white":134327,"draws":8562,"black":123660,"game":null},{"uci":"c7c5","san":"c5","averageRating":1472,"white":56557,"draws":3692,"black":49453,"game":null},{"uci":"e6e5","san":"e5","averageRating":1661,"white":32569,"draws":1857,"black":21855,"game":null},{"uci":"c7c6","san":"c6","averageRating":1538,"white":24775,"draws":1474,"black":20058,"game":null},{"uci":"f8d6","san":"Bd6","averageRating":1652,"white":14693,"draws":859,"black":14146,"game":null},{"uci":"b8c6","san":"Nc6","averageRating":1292,"white":13769,"draws":654,"black":8005,"game":null},{"uci":"f8c5","san":"Bc5","averageRating":1451,"white":9938,"draws":469,"black":7459,"game":null},{"uci":"f8e7","san":"Be7","averageRating":1615,"white":5109,"draws":368,"black":5084,"game":null},{"uci":"d8e7","san":"Qe7","averageRating":1545,"white":5180,"draws":263,"black":4432,"game":null},{"uci":"g8e7","san":"Ne7","averageRating":1514,"white":4446,"draws":251,"black":3742,"game":null}],"recentGames":[{"uci":"e6d5","id":"EXldYYoG","winner":"white","speed":"blitz","mode":"rated","black":{"name":"matheusmm98","rating":1863},"white":{"name":"shuravi21","rating":1856},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"bVRu6KyQ","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Jeff555","rating":1514},"white":{"name":"ostingodman","rating":1233},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"ZJCexuGh","winner":"white","speed":"blitz","mode":"rated","black":{"name":"Amelia_LauP","rating":1834},"white":{"name":"hrn201","rating":1946},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"FI66fcnE","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Aalvines","rating":1456},"white":{"name":"Chicogomes","rating":1448},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"e6d5","id":"YcXrVnfo","winner":"white","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2850},"white":{"name":"Zakaryan_David","rating":2876},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"ZxN5ywYI","winner":"black","speed":"bullet","mode":"rated","black":{"name":"jugandorapidito","rating":2849},"white":{"name":"Zakaryan_David","rating":2877},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"UHdt5RyD","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Brave_spirit12","rating":2930},"white":{"name":"Iranq","rating":2895},"year":2023,"month":"2023-08"},{"uci":"e6d5","id":"fYIOMSzv","winner":"black","speed":"bullet","mode":"rated","black":{"name":"Brave_spirit12","rating":2931},"white":{"name":"Alamzhi","rating":2794},"year":2023,"month":"2023-08"}],"opening":null}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:36 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:36 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://explorer.lichess.ovh/lichess?variant=standard&fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3pP3%2F8%2F5N2%2FPPPP1PPP%2FRNBQKB1R+b+KQkq+-+0+2
+  response:
+    body:
+      string: '{"white":5207970,"draws":386524,"black":5613279,"moves":[{"uci":"c7c5","san":"c5","averageRating":1678,"white":3566727,"draws":278424,"black":4125197,"game":null},{"uci":"b8c6","san":"Nc6","averageRating":1367,"white":515543,"draws":33620,"black":436099,"game":null},{"uci":"f7f6","san":"f6","averageRating":1423,"white":297283,"draws":19677,"black":263237,"game":null},{"uci":"d5d4","san":"d4","averageRating":1596,"white":152542,"draws":9747,"black":165765,"game":null},{"uci":"g8e7","san":"Ne7","averageRating":1599,"white":147848,"draws":10677,"black":153317,"game":null},{"uci":"f8c5","san":"Bc5","averageRating":1368,"white":90777,"draws":5289,"black":70779,"game":null},{"uci":"c7c6","san":"c6","averageRating":1526,"white":78604,"draws":4506,"black":68149,"game":null},{"uci":"a7a6","san":"a6","averageRating":1530,"white":50663,"draws":3813,"black":54015,"game":null},{"uci":"c8d7","san":"Bd7","averageRating":1670,"white":45626,"draws":3525,"black":50601,"game":null},{"uci":"f7f5","san":"f5","averageRating":1591,"white":40717,"draws":2686,"black":35820,"game":null},{"uci":"f8e7","san":"Be7","averageRating":1635,"white":37675,"draws":2371,"black":32519,"game":null},{"uci":"g7g6","san":"g6","averageRating":1466,"white":31514,"draws":2299,"black":28120,"game":null}],"recentGames":[{"uci":"d5d4","id":"cO3plSQj","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Killer4575","rating":1079},"white":{"name":"brenooo","rating":1082},"year":2023,"month":"2023-08"},{"uci":"g8e7","id":"Hgrpu6s9","winner":"black","speed":"blitz","mode":"rated","black":{"name":"irukawa90","rating":1410},"white":{"name":"GariJuanchov","rating":1403},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"fjk9qxvG","winner":"white","speed":"classical","mode":"rated","black":{"name":"Aska360","rating":1205},"white":{"name":"NikitaChaadaev","rating":1124},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"EEkD2gbn","winner":"black","speed":"blitz","mode":"rated","black":{"name":"Marcoveja","rating":1467},"white":{"name":"Facu_477","rating":1477},"year":2023,"month":"2023-08"}],"topGames":[{"uci":"c7c5","id":"1wZEoHt7","winner":"black","speed":"bullet","mode":"rated","black":{"name":"BabaRamdev","rating":3029},"white":{"name":"MR_HW","rating":2823},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"oqpy5ynT","winner":"black","speed":"bullet","mode":"rated","black":{"name":"hatembenarfa","rating":2851},"white":{"name":"chesszxj","rating":2897},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"0HR4R9T2","winner":"white","speed":"bullet","mode":"rated","black":{"name":"WelcomeViolence","rating":2684},"white":{"name":"ShadowKing78","rating":3013},"year":2023,"month":"2023-08"},{"uci":"c7c5","id":"E8YQcD5S","winner":"white","speed":"bullet","mode":"rated","black":{"name":"Brave_spirit12","rating":2924},"white":{"name":"lightning2668","rating":2927},"year":2023,"month":"2023-08"}],"opening":null}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,If-Modified-Since,Cache-Control,X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - max-age=10800
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 19 Sep 2023 15:31:36 GMT
+      Expires:
+      - Tue, 19 Sep 2023 18:31:36 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+version: 1
