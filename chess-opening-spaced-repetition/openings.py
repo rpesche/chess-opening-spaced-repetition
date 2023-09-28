@@ -14,7 +14,6 @@ import hashlib
 
 import chess
 import chess.svg
-from rich.pretty import pprint
 
 from lichess.openings import generate_frequent_move
 from anki import create_anki_packages
@@ -30,40 +29,44 @@ class CardInfo:
         payload = self.fen + self.opponnent_san
         return hashlib.md5(payload.encode("utf-8")).hexdigest()
 
-def key_from_oponent_move(board, opponnent_san, moves):
-    fen = board.fen()
 
-    yield CardInfo(fen=fen, opponnent_san=opponnent_san, moves=list(moves.keys()))
+def cards_fom_moves_tree(board, moves_tree) -> dict[str, CardInfo]:
+    results = {}
+    _cards_fom_moves_tree(board, moves_tree, results)
+    return results
 
-    for san, further_moves in moves.items():
-        for further_san, further_moves in further_moves.items():
+
+def _cards_fom_moves_tree(board, moves_tree, results):
+
+    # generate
+    for opponnent_san, moves in moves_tree.items():
+        results_key = board.fen() + opponnent_san
+
+        # Sometimes we get to the same board through different sequence of moves
+        if results_key in results:
+            continue
+        results[results_key] = CardInfo(fen=board.fen(), opponnent_san=opponnent_san, moves=list(moves.keys()))
+
+    for opponnent_san, moves in moves_tree.items():
+        for san, further_moves in moves.items():
             board.push_san(opponnent_san)
             board.push_san(san)
-            yield from key_from_oponent_move(board, further_san, further_moves)
+            _cards_fom_moves_tree(board, further_moves, results)
             board.pop()
             board.pop()
+
+
+def gen_learning_decks(fen: str, deep: int, package_filename: str):
+    board = chess.Board(fen)
+
+    moves_tree = generate_frequent_move(board, deep)
+    cards = cards_fom_moves_tree(board, moves_tree)
+    create_anki_packages(list(cards.values()), package_filename)
 
 
 def main():
     starting_fen = "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1"
-    board = chess.Board(starting_fen)
-
-    result = generate_frequent_move(board, 2)
-    # pprint(result, expand_all=True)
-
-    res = []
-    for further_san, further_moves in result.items():
-        plop = key_from_oponent_move(board, further_san, further_moves)
-        res.extend(plop)
-    create_anki_packages(res)
-    # pprint(res, expand_all=True)
-    # fen, color = input_chess_board()
-
-    # board = chess.Board(fen)
-    # res = chess.svg.board(board)
-    # print(res)
-    # with open("truc.svg", "w+") as fd:
-    # fd.write(res)
+    gen_learning_decks(starting_fen, 3, "output.apkg")
 
 
 if __name__ == "__main__":

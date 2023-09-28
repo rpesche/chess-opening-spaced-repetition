@@ -37,7 +37,7 @@ def create_svg_board(
     return svg_file
 
 
-def create_anki_packages(cards: list["CardInfo"]):
+def create_anki_packages(cards: list["CardInfo"], package_filename: str):
     # TODO compute id base on generation parameters
     # TODO make title more explicite (wikibooks ?)
     my_deck = genanki.Deck(2059400110, "my decks")
@@ -85,4 +85,4 @@ def create_anki_packages(cards: list["CardInfo"]):
 
     package = genanki.Package(my_deck)
     package.media_files = package_files
-    package.write_to_file("output.apkg")
+    package.write_to_file(package_filename)
