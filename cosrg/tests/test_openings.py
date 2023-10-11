@@ -1,8 +1,8 @@
 from chess import Board
 import vcr
 
-from lichess.openings import generate_frequent_move
-from openings import cards_fom_moves_tree
+from cosrg.lichess.openings import generate_frequent_move
+from cosrg.openings import cards_fom_moves_tree
 
 
 @vcr.use_cassette(

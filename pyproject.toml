@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Create spaced repetition deck to learn chess openings"
 authors = ["Romain Pesche <romain@pesche.fr>"]
 readme = "README.md"
-packages = [{include = "chess-opening-spaced-repetition"}]
+packages = [{include = "cosrg"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -35,4 +35,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-chess-opening-spaced-repetition = "chess-opening-spaced-repetition.openings:main"
+cosrg = "cosrg.openings:main"

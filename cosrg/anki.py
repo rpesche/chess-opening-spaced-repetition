@@ -6,7 +6,7 @@ import chess.svg
 import chess
 
 if TYPE_CHECKING:
-    from openings import CardInfo
+    from cosrg.openings import CardInfo
 import genanki
 
 

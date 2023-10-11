@@ -4,12 +4,12 @@ Generate openings anki decks
 from dataclasses import dataclass
 import hashlib
 
-from lichess.openings import generate_frequent_move, MovesTree
-from lichess.editor import input_chess_board
+from cosrg.lichess.openings import generate_frequent_move, MovesTree
+from cosrg.lichess.editor import input_chess_board
+from cosrg.anki import create_anki_packages
 
 import chess.svg
 from chess import Board
-from anki import create_anki_packages
 import typer
 
 
