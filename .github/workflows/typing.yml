@@ -1,0 +1,23 @@
+
+name: Typing
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+
+jobs:
+  typing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - name: Set up poetry
+        uses: abatilo/actions-poetry@v2
+      - name: Install dependencies
+        run: poetry install --with typing
+      - name: Typing
+        run: poetry run mypy .
