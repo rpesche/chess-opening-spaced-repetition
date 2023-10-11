@@ -1,5 +1,5 @@
-from chess import Board
 import vcr
+from chess import Board
 
 from cosrg.lichess.openings import generate_frequent_move
 from cosrg.openings import cards_fom_moves_tree

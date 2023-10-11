@@ -1,7 +1,7 @@
-from berserk import Client
-from typing import TypedDict, Iterator, Dict
-from chess import Board
+from typing import Dict, Iterator, TypedDict
 
+from berserk import Client
+from chess import Board
 
 MovesTree = Dict[str, "MovesTree"]
 
@@ -27,7 +27,9 @@ def get_frequent_moves_from_fen(fen: str, database: str = "lichess") -> Iterator
         yield {"san": move["san"], "play_rate": play_rate}
 
 
-def _generate_frequent_move(board: Board, results: MovesTree, iteration: int = 0) -> None:
+def _generate_frequent_move(
+    board: Board, results: MovesTree, iteration: int = 0
+) -> None:
     if iteration <= 0:
         return
 

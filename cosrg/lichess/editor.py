@@ -7,9 +7,10 @@ ask user to draw a board on it
 
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
+
 from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import NoSuchWindowException
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 def input_chess_board() -> tuple[str, str]:
@@ -21,9 +22,7 @@ def input_chess_board() -> tuple[str, str]:
         try:
             url = driver.current_url
 
-            wait.until(
-                lambda driver: driver.current_url != url
-            )
+            wait.until(lambda driver: driver.current_url != url)
         except (NoSuchWindowException, Exception):
             break
 
