@@ -12,6 +12,7 @@ berserk = "^0.13"
 selenium = "^4.12.0"
 chess = "^1.10.0"
 genanki = "^0.13.0"
+typer = {extras = ["all"], version = "^0.9.0"}
 
 
 [tool.poetry.group.tests]
