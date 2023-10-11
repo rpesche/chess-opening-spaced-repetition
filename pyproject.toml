@@ -33,3 +33,6 @@ mypy = "^1.5.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+chess-opening-spaced-repetition = "chess-opening-spaced-repetition.openings:main"
