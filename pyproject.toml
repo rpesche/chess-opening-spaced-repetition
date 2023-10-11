@@ -8,10 +8,11 @@ packages = [{include = "chess-opening-spaced-repetition"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-berserk = "^0.12.10"
+berserk = "^0.13"
 selenium = "^4.12.0"
 chess = "^1.10.0"
 genanki = "^0.13.0"
+
 
 [tool.poetry.group.tests]
 optional = true
@@ -19,6 +20,13 @@ optional = true
 [tool.poetry.group.tests.dependencies]
 pytest = "^7.4.2"
 vcrpy = "^5.1.0"
+
+
+[tool.poetry.group.typing]
+optional = true
+
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.5.1"
 
 
 [build-system]
