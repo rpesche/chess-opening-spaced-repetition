@@ -1,22 +1,16 @@
 """
 Generate openings anki decks
-
-Usage:
-  openings generate from <position> (black|white)
-  openings generate
-
-Options:
-  -h --help     Show this screen.
-  <position>    The start position
 """
-from dataclasses import dataclass
 import hashlib
+from dataclasses import dataclass
 
 import chess.svg
+import typer
 from chess import Board
 
-from lichess.openings import generate_frequent_move, MovesTree
-from anki import create_anki_packages
+from cosrg.anki import create_anki_packages
+from cosrg.lichess.editor import input_chess_board
+from cosrg.lichess.openings import MovesTree, generate_frequent_move
 
 
 @dataclass
@@ -67,14 +61,32 @@ def gen_learning_decks(fen: str, deep: int, package_filename: str) -> None:
     create_anki_packages(list(cards.values()), package_filename)
 
 
+def generate(
+    deep: int = 2,
+    package_filename: str = "output.apkg",
+    interactive: bool = False,
+    fen: str = "",
+) -> None:
+    """
+    Generate an anki decks for learning opening strating from a board
+
+    The --fen and --interactive parameter are mutually exclusive.
+    """
+
+    if fen and interactive:
+        return
+
+    if not fen and interactive:
+        fen, _ = input_chess_board()
+    gen_learning_decks(fen, deep, package_filename)
+
+
 def main() -> None:
-    starting_fen = "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1"
-    gen_learning_decks(starting_fen, 2, "output.apkg")
+    typer.run(generate)
 
 
 if __name__ == "__main__":
     main()
-
 
 # TODO: must get all the moves that lead to starting board in order to get info from wikibooks
 # The book title are formatted using joined move san, so we must having all of them

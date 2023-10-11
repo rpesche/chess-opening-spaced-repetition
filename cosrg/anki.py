@@ -1,12 +1,13 @@
+from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import TYPE_CHECKING
-from pathlib import Path
 
-import chess.svg
 import chess
+import chess.svg
 
 if TYPE_CHECKING:
-    from openings import CardInfo
+    from cosrg.openings import CardInfo
+
 import genanki
 
 

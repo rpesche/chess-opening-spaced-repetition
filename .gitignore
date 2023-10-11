@@ -4,3 +4,6 @@ geckodriver.log
 # Python specific generated file
 *.pyc
 __pycache__
+
+# Anki generate deck
+*.apkg
