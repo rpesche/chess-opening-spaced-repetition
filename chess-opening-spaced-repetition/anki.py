@@ -10,9 +10,7 @@ if TYPE_CHECKING:
 import genanki
 
 
-def create_svg_board(
-    fen: str, opponnent_san: str | None = None, moves: list[str] = []
-) -> chess.svg.SvgWrapper:
+def create_svg_board(fen: str, opponnent_san: str, moves: list[str] = []) -> str:
     board = chess.Board(fen)
     last_move_to_display = None
     next_moves_to_display = []
@@ -37,7 +35,7 @@ def create_svg_board(
     return svg_file
 
 
-def create_anki_packages(cards: list["CardInfo"], package_filename: str):
+def create_anki_packages(cards: list["CardInfo"], package_filename: str) -> None:
     # TODO compute id base on generation parameters
     # TODO make title more explicite (wikibooks ?)
     my_deck = genanki.Deck(2059400110, "my decks")

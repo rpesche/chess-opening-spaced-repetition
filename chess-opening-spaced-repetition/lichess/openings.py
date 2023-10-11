@@ -1,5 +1,9 @@
 from berserk import Client
-from typing import TypedDict
+from typing import TypedDict, Iterator, Dict
+from chess import Board
+
+
+MovesTree = Dict[str, "MovesTree"]
 
 
 class Move(TypedDict):
@@ -10,20 +14,20 @@ class Move(TypedDict):
     # draw_rate: float
 
 
-def get_frequent_moves_from_fen(fen: str, database: str = "lichess"):
+def get_frequent_moves_from_fen(fen: str, database: str = "lichess") -> Iterator[Move]:
     client = Client()
     openings_info = client.opening_explorer.get_lichess_games(position=fen)
     moves = openings_info["moves"]
     total_games = sum([move["white"] + move["black"] + move["draws"] for move in moves])
 
     for move in moves:
-        play_rate = (move["white"] + move["black"] + move["draws"]) / total_games * 100.0
-        yield {
-            "san": move["san"],
-            "play_rate": play_rate
-        }
+        play_rate = (
+            (move["white"] + move["black"] + move["draws"]) / total_games * 100.0
+        )
+        yield {"san": move["san"], "play_rate": play_rate}
 
-def _generate_frequent_move(board, results, iteration=0):
+
+def _generate_frequent_move(board: Board, results: MovesTree, iteration: int = 0) -> None:
     if iteration <= 0:
         return
 
@@ -43,12 +47,14 @@ def _generate_frequent_move(board, results, iteration=0):
                 continue
             results[san][opening_move["san"]] = {}
             board.push_san(opening_move["san"])
-            _generate_frequent_move(board, results[san][opening_move["san"]], iteration - 1)
+            _generate_frequent_move(
+                board, results[san][opening_move["san"]], iteration - 1
+            )
             board.pop()
         board.pop()
 
 
-def generate_frequent_move(board, iteration=0):
-    results = {}
+def generate_frequent_move(board: Board, iteration: int = 0) -> MovesTree:
+    results: MovesTree = {}
     _generate_frequent_move(board, results, iteration)
     return results
